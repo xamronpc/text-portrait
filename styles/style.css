@@ -1,0 +1,38 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.wrapper {
+  background: rgba(0, 0, 0, .99999);
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
+}
+
+.portrait {
+  font-family: "Impact";
+  font-size: 11px;
+  line-height: 9px;
+  background: url("https://github.com/xamr0n/webslide-portfolio/blob/main/static/images/xAm.jpg?raw=true")
+    fixed top no-repeat;
+  background-size: contain;
+  max-width: 600px;
+}
+
+
+/* This part is important for the feature itself */
+.portrait {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, .00001);
+}
+
+.border-image {
+  border-style: 10px solid black;
+  border-width: 10px;
+  border-image-source: url("https://github.com/xamr0n/webslide-portfolio/blob/main/static/images/xAm.jpg?raw=true);
+  border-image-slice: 10;
+  border-image-width: 10px;
+}
